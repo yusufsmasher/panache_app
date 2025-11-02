@@ -4,7 +4,7 @@ require('dotenv').config();
 
 const createAdmin = async () => {
   try {
-    await mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/panache-tiles', {
+    await mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://yusufsmasher:ffrLlbqjcWenskYH@fmbashara1446.c8l53jz.mongodb.net/panache_app?retryWrites=true&w=majority&appName=fmbashara1446', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });

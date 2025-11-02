@@ -99,10 +99,15 @@ cd backend
 npm install
 ```
 
-3. Create a `.env` file:
+3. Create a `.env` file by copying `.env.example`:
+```bash
+cp .env.example .env
+```
+
+Or create it manually with:
 ```bash
 PORT=5000
-MONGODB_URI=mongodb://localhost:27017/panache-tiles
+MONGODB_URI=mongodb+srv://yusufsmasher:ffrLlbqjcWenskYH@fmbashara1446.c8l53jz.mongodb.net/panache_app?retryWrites=true&w=majority&appName=fmbashara1446
 JWT_SECRET=your-secret-key-change-in-production
 NODE_ENV=development
 ```
