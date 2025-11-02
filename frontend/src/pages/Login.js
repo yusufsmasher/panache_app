@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
+import logo from '../assets/images/panache-logo.png';
 import './Login.css';
 
 const Login = () => {
@@ -29,6 +30,9 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-card">
+        <div className="logo-container">
+          <img src={logo} alt="Panache Logo" className="panache-logo" />
+        </div>
         <h2>Login to Panache Tiles</h2>
         {error && <div className="alert alert-error">{error}</div>}
         <form onSubmit={handleSubmit}>

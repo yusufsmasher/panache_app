@@ -15,6 +15,19 @@
   max-width: 400px;
 }
 
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.panache-logo {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
 .login-card h2 {
   margin-bottom: 30px;
   text-align: center;
